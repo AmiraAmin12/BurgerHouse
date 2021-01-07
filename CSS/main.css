@@ -1,0 +1,419 @@
+ @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+                                    /* general style*/
+                                    
+                                     :root {
+                                        --clr-grey-9: hsl(212, 33%, 89%);
+                                        --primaryColor: #fcae04;
+                                        --mainWhite: #fff;
+                                        --mainBlack: #222;
+                                        --mainBrown: #42120a;
+                                        --mainTransition: all 0.3s linear;
+                                    }
+                                    
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                        box-sizing: border-box;
+                                    }
+                                    
+                                    body {
+                                        color: var(--mainBlack);
+                                        background: var(--mainWhite);
+                                        font-family: "Lato", sans-serif;
+                                    }
+                                    
+                                    ul {
+                                        list-style: none;
+                                    }
+                                    
+                                    p {
+                                        text-transform: uppercase;
+                                        padding: 0 .3rem;
+                                    }
+                                    /* start header  section style */
+                                    
+                                    header {
+                                        background-color: var(--primaryColor);
+                                    }
+                                    /* nav section*/
+                                    
+                                    header nav {
+                                        width: 90vw;
+                                        margin: 0 auto;
+                                        padding-top: 2rem;
+                                        display: grid;
+                                        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                                        grid-column-gap: 1.5rem;
+                                    }
+                                    
+                                    .logo {
+                                        display: flex;
+                                        padding: 0 2rem;
+                                        justify-content: flex-start;
+                                    }
+                                    
+                                    .logo .image img {
+                                        width: 32px;
+                                    }
+                                    
+                                    .logo .logo-text {
+                                        padding: .5rem;
+                                    }
+                                    
+                                    .logo .text p {
+                                        text-transform: uppercase;
+                                        font: bold larger small-caps cursive, sans-serif;
+                                    }
+                                    
+                                    .nav__info .delivery {
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        padding-right: 2rem;
+                                        padding-bottom: 1rem;
+                                    }
+                                    
+                                    .nav__info .delivery img {
+                                        width: 32px;
+                                    }
+                                    
+                                    .links {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        padding: 0 2rem;
+                                    }
+                                    
+                                    .links a {
+                            
+                                        text-decoration: none;
+                                        text-transform: uppercase;
+                                        color: var(--mainBlack);
+                                        font: bold small-caps cursive, sans-serif;
+                                    }
+                                    .links a:hover{
+                                        color: var(--mainWhite); 
+                                    }
+                                    /* banner section style */
+                                    
+                                    header .banner {
+                                        display: grid;
+                                        width: 90vw;
+                                        margin: 0 auto;
+                                        padding-top: 2rem;
+                                        grid-template-columns: 1fr 1fr;
+                                        grid-column-gap: 1rem;
+                                        height: 70vh;
+                                    }
+                                    
+                                    .banner .title {
+                                        padding-top: 2.5rem;
+                                    }
+                                    
+                                    .banner .title p {
+                                        text-transform: uppercase;
+                                    }
+                                    
+                                    .banner .title .border {
+                                        border: 2px dashed;
+                                        padding: .3rem;
+                                        width: max-content;
+                                    }
+                                    
+                                    .banner .title .bold-large,
+                                    .banner .title .bold-large {
+                                        font: bolder 100px small-caps cursive, sans-serif;
+                                        color: var(--mainBrown);
+                                        text-shadow: 1px 1px 1px #fff;
+                                    }
+                                    
+                                    .banner .title .bold {
+                                        font: bolder 85px small-caps cursive, sans-serif;
+                                        color: var(--mainBrown);
+                                        text-shadow: 1px 1px 1px #fff;
+                                    }
+                                    
+                                    .banner .photo {
+                                        background-image: url("../images/BSF.jpg");
+                                        background-size: cover;
+                                    }
+                                    /* end header  section style */
+                                    /* start content   section style */
+                                    
+                                    .container {
+                                        width: 90vw;
+                                        margin: 0 auto;
+                                        padding-top: 2.5rem;
+                                    }
+                                    /* images  section style */
+                                    
+                                    .images {
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr;
+                                        grid-column-gap: 1.5rem;
+                                        height: 70vh;
+                                        padding: 2.5rem 0;
+                                    }
+                                    
+                                    .single-image,
+                                    .first,
+                                    .second {
+                                        border-radius: 2%;
+                                    }
+                                    
+                                    .images .single-image {
+                                        background-image: url("../images/burgerhouse4.jpg");
+                                        background-size: cover;
+                                    }
+                                    
+                                    .text {
+                                        color: var(--mainWhite);
+                                        padding-top: 2.5rem;
+                                        padding-left: 2rem;
+                                    }
+                                    
+                                    .text p {
+                                        font: bolder x-large small-caps cursive, sans-serif;
+                                    }
+                                    
+                                    .text p:first-child {
+                                        font: bold large small-caps cursive, sans-serif;
+                                    }
+                                    
+                                    .images .two-image {
+                                        display: grid;
+                                        grid-template-rows: 1fr 1fr;
+                                        grid-row-gap: .5rem;
+                                    }
+                                    
+                                    .images .two-image img {
+                                        height: 50%;
+                                        width: max-content;
+                                    }
+                                    
+                                    .first {
+                                        background-image: url("../images/hamburgers.jpg");
+                                    }
+                                    
+                                    .second {
+                                        background-image: url("../images/burger-freies3.jpeg");
+                                    }
+                                    /*  choices  section style */
+                                    
+                                    .headers {
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                        color: var(--mainBrown);
+                                        padding-top: 2.5rem;
+                                    }
+                                    
+                                    .headers p {
+                                        font: bolder 50px small-caps Lato, sans-serif;
+                                        padding-top: 2.5rem;
+                                    }
+                                    
+                                    h4 {
+                                        background-color: var(--primaryColor);
+                                        width: fit-content;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    .info  {
+                                        text-align: center;
+                                        text-transform: lowercase;
+                                        padding-top: 1rem;
+                                    }
+                                    
+                                    .photos {
+                                        display: grid;
+                                        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                                        grid-column-gap: 7rem;
+                                        padding-top: 2.5rem;
+                                    }
+                                    
+                                    .photos img {
+                                        max-width: 400px;
+                                        max-height: 250px;
+                                    }
+                                    
+                                    h1 {
+                                        text-transform: uppercase;
+                                        text-align: center;
+                                        padding: 1rem;
+                                    }
+                                    
+                                    .data p {
+                                        text-align: center;
+                                    }
+                                     /* slider section style */
+                                     .slider{
+                                         width: 90vw;
+                                         margin: 0 auto;
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr;
+                                        grid-column-gap: 5rem;
+                                        padding-top: 7rem;
+                                       
+                                       padding: 2rem;
+                                        margin: 7rem 0;
+                                     }
+                                     .content h3,h1{
+                    
+                                        color: var(--mainBrown);
+                                        text-align: start;
+
+                                     }
+                                     .content h1{
+                                        font: bolder xx-large small-caps sans-serif;
+                                
+                                     }
+                                     .content p{
+                                         text-transform: lowercase;
+                                         text-align: justify;
+                                         line-height: 1.5;
+                                     }
+                                 
+                                     .slider-container {
+                                        border: 5px solid var(--clr-grey-9);
+                                        height: 55vh;                                      
+                                        position: relative;
+                                        border-radius: 0.5rem;
+                                        overflow: hidden;                                      
+                                      }
+                                      .slide {
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        display: grid;
+                                        place-items: center;
+                                        transition: all 0.25s ease-in-out;
+                                        text-align: center;
+                                      }
+                                      .dot__container{
+                                        margin-top: 7rem;
+                                        
+                                        
+                                      }
+                                      .dot {
+                                     
+                                        cursor: pointer;
+                                        height: 15px;
+                                        width: 15px;
+                                        margin: 0 2px;
+                                        background-color:var(--primaryColor);
+                                        border-radius: 50%;
+                                        display: inline-block;
+                                        transition: background-color 0.6s ease;
+                                      }
+                                      
+                                      .active, .dot:hover {
+                                        background-color: var(--mainBrown);
+                                      }
+                                      .prev, .next {
+                                        cursor: pointer;
+                                        position: absolute;
+                                        top: 50%;
+                                        width: auto;
+                                        margin-top: -22px;
+                                        padding: 16px;
+                                        color: white;
+                                        font-weight: bold;
+                                        font-size: 18px;
+                                        transition: 0.6s ease;
+                                        border-radius: 0 3px 3px 0;
+                                        user-select: none;
+                                      }
+                                      /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: var(--primaryColor);
+  }
+  
+
+                                    /* end content   section style */
+                                    /* form   section style */
+                                   
+                                    .form {
+                                        
+                                        padding-bottom:7rem;
+                                       
+                                    }
+                                    
+                                    .form .form__container {
+                                        width: 40vw;
+                                        margin: 0 auto;
+                                        padding-top: 2.5rem;
+                                    }
+                                    
+                                    .form .form__container h1,
+                                    h3 {
+                                        text-transform: uppercase;
+                                        text-align: center;
+                                        color: var(--mainBrown);
+                                    }
+                                    
+                                    .form .form__container .form__data ul {
+                                        margin-top: 2rem;
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr;
+                                        grid-template-rows: repeat(3, 50px);
+                                        grid-column-gap: .2rem;
+                                        grid-row-gap: .5rem;
+                                    }
+                                    
+                                    .form__data input {
+                                        padding: 10px;
+                                        width: 90%;
+                                        text-transform: uppercase;
+                                    }
+                                    
+                                    .form__data input[type="submit"] {
+                                        background-color: #640100;
+                                        color: var(--mainWhite);
+                                    }
+                                    .bg2 img{
+                                       max-width: 200px;
+                                    }
+                                    
+                                    footer {
+                                        width: 90vw;
+                                        margin: 0 auto;
+                                        background-image: url("../images/burger-537.jpg");
+                                        background-size: cover;
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr;
+                                        grid-column-gap: 7rem;
+                                        color: var(--mainWhite);
+                                    }
+                                    
+                                    .footer__info {
+                                        padding-top: 2.5rem;
+                                    }
+                                    
+                                    .pragraph p {
+                                        padding-top: 2.5rem;
+                                        padding-left: 1rem;
+                                        text-transform: lowercase;
+                                        padding-bottom: 30rem;
+                                    }
+                                    
+                                    .copyright {
+                                        text-transform: uppercase;
+                                        padding: 20px;
+                                    }
+                                    .contact__container{
+                                        padding: 19rem  0rem 20rem 18rem;
+                                    }
+                                    .contact{
+                                        display: flex;
+                                        padding: .5rem;
+                                   }
+.social{
+    display:flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: 75%;
+}
